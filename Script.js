@@ -23,5 +23,39 @@ document.querySelector("form").addEventListener("submit", function (event)
               return;
             }
           }
-          alert("Die Registrierung war erfolgreich.");
- });
+const kleidung = document.getElementById("kleidung").value;
+const krisengebiet = document.getElementById("krisengebiet").value;
+
+const jetzt " new Date();
+
+const datum = jetzt.toLocaleDataString("de-DE");
+const uhrzeit = jetzt.toLocaleTimeString("de-DE");
+
+let ort;
+
+if (uebergabe.value === "Abholung durch Sammelfahrzeug") {
+
+      const strasse=document.getElementById("strasse").value;
+      const ortsname = document.getElementById("ort").value;
+
+      ort = strasse + ", " + plz + " " + ortsname;
+
+} else {
+
+      ort = "Geschäftsstelle";
+
+}
+
+document.getElementById("bestaetigung").innerHTML = 
+<h3>Regisrtirerung erfolgreich</h3>
+
+<p><strong>Art der Kleidung:</strong> ${kleidung}</p>
+
+<p><strong>Krisengebiet:</strong> ${krisengebiet}</p>
+
+<p><strong>Datum:</strong> ${datum}</p>
+
+<p><strong>Uhrzeit:</strong> ${uhrzeit}</p>
+
+<p><strong>Ort:</strong> ${ort}</p>
+`;
