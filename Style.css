@@ -46,3 +46,10 @@ footer {
 #adresseBereich {
   display: none;
 }
+
+#bestaetigung {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #dff0d8;
+  border-radius: 8px;
+}
