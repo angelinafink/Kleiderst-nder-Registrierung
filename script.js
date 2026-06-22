@@ -26,7 +26,7 @@ document.querySelector("form").addEventListener("submit", function (event)
 const kleidung = document.getElementById("kleidung").value;
 const krisengebiet = document.getElementById("krisengebiet").value;
 
-const jetzt " new Date();
+const jetzt = new Date();
 
 const datum = jetzt.toLocaleDateString("de-DE");
 const uhrzeit = jetzt.toLocaleTimeString("de-DE");
