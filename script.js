@@ -12,7 +12,7 @@ uebergabe.addEventListener("change", function () {
       }
   });
 
-document.querySelector("form").addEventListener("submit", function (event)
+document.querySelector("form").addEventListener("submit", function (event) {
     event.preventDefault();
 
     const plz = document.getElementById("plz").value;
@@ -47,7 +47,7 @@ if (uebergabe.value === "Abholung durch Sammelfahrzeug") {
 }
 
 document.getElementById("bestaetigung").innerHTML = 
-<h3>Regisrtirerung erfolgreich</h3>
+<h3>Registrierung erfolgreich</h3>
 
 <p><strong>Art der Kleidung:</strong> ${kleidung}</p>
 
