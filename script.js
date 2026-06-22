@@ -3,7 +3,7 @@ const adresseBereich = document.getElementById("adresseBereich");
 
 const vereinsPLZ = "49448";
 
-uebergabe.addEventListener("change", funktion () {
+uebergabe.addEventListener("change", function () {
 
       if (uebergabe.value === "Abholung durch Sammelfahrzeug") {
           adresseBereich.style.display = "block";
@@ -18,7 +18,7 @@ document.querySelector("form").addEventListener("submit", function (event)
     const plz = document.getElementById("plz").value;
 
     if (uebergabe.value === "Abholung durch Sammelfahrzeug") {
-          if (plz.substring(0,2) !== vereinsPLZ.substring(0, 2)) {
+          if (plz.substring(0, 2) !== vereinsPLZ.substring(0, 2)) {
               alert("Die Abholadresse liegt leider nicht in der Nähe der Geschäftsstelle.");
               return;
             }
@@ -28,14 +28,14 @@ const krisengebiet = document.getElementById("krisengebiet").value;
 
 const jetzt " new Date();
 
-const datum = jetzt.toLocaleDataString("de-DE");
+const datum = jetzt.toLocaleDateString("de-DE");
 const uhrzeit = jetzt.toLocaleTimeString("de-DE");
 
 let ort;
 
 if (uebergabe.value === "Abholung durch Sammelfahrzeug") {
 
-      const strasse=document.getElementById("strasse").value;
+      const strasse = document.getElementById("strasse").value;
       const ortsname = document.getElementById("ort").value;
 
       ort = strasse + ", " + plz + " " + ortsname;
@@ -59,3 +59,4 @@ document.getElementById("bestaetigung").innerHTML =
 
 <p><strong>Ort:</strong> ${ort}</p>
 `;
+});
